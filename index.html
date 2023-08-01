@@ -3,9 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tushar Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    do it yourself
+    <!-- header -->
+    <div id="particles-js"></div>
+
+    <header class="header">
+      
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Tushar Garg</h1>
+        <h3>And I'm <span class="multiple-text"></span> </span></h3>
+        <p>
+          This is my portfolio Developed by me using React, Javascript, HTML and CSS.with all infromation
+           about myself hope you will like it.
+        </p>
+        <div class="social-media">
+          <a href="https://github.com/tushar354" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/tushar._.garg02/" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/tushar-garg02/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a href="https://drive.google.com/file/d/1rZEsSX_F1dU78y0_A_WjzdRY7XhutSb_/view?usp=drive_link"  target="_blank" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/about.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          I am pursuing my IT degree at Guru Gobind Singh Indraprastha University, 
+          where I have gained a solid foundation in programming languages, such as C++, C, HTML, CSS,
+           and JavaScript, as well as Git and GitHub. I am a member of the E Cell ADGITM and a photographer 
+           at CONFLUENZ, where I demonstrate my leadership and planning abilities, as well as my creativity and
+           eye for detail. I am always on the lookout for new challenges that will drive me to do better and 
+           generate fresh and innovative ideas. I am open for internship opportunities that will allow me to 
+           grow and develop my skills and knowledge. I perform best in a work culture that promotes high-energy 
+           teamwork balanced with positivity and collaboration. Feel free to reach out to me for any conversation.
+        </p>
+        <a href="https://www.linkedin.com/in/tushar-garg02/" target="_blank" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>web Development</h3>
+          <p>
+            I am a student web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL.
+             I am available to work on simple websites to complex web applications.
+             I am committed to providing excellent customer service.
+             I am passionate about web development and I am confident 
+             in my ability to deliver high-quality results. I am a clear and concise
+              communicator, and I am always professional in my interactions with clients. I am also available to provide support 
+              throughout the development process.
+          </p>
+          <a href="https://github.com/tushar354" target="_blank" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-camera"></i>
+          <h3>Photoghapher</h3>
+          <p>
+            I am a photographer who can do all types of photography. I am passionate about capturing moments in time,
+             and I am committed to providing excellent customer service. My work has been featured in publications, 
+             and I have been awarded awards. I am experienced in shooting a variety of events, including weddings, birthdays, corporate events, and more. 
+             I am also able to capture the beauty of nature in my photographs, as well as create high-quality product images.
+          </p>
+          <a href="https://www.linkedin.com/in/tushar-garg02/" target="_blank" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-paint"></i>
+          <h3>ghraphic design</h3>
+          <p>
+            I am a graphic designer with experience in a variety of design styles. I can create logos, branding, web design, and print design. 
+            I am passionate about graphic design and I am always looking for new ways to express my creativity. I am confident that I can create beautiful
+             and effective designs that will help you achieve your marketing goals.I believe that I can provide you with the high-quality graphic design services that you need. 
+             
+          </p>
+          <a href="https://www.instagram.com/tushar._.garg02/" target="_blank" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Lastest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/photo.jpg" height="230" alt="" />
+          <div class="portfolio-layer">
+            <h4>Mokamaid </h4>
+            <p>
+              Front-end model of a multi-page website for a bakery made
+            </p>
+            <a href="https://mokamaid.netlify.app/#" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+          
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/photo1.jpg" height="230" alt="" />
+          <div class="portfolio-layer">
+            <h4>soulboundConfessions</h4>
+            <p>
+              dedicated to providing compassionate and effective mental health 
+              care to individuals who are struggling with mental health issues.
+            </p>
+            <a href="https://soulboundconfessions.netlify.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/photo3.jpg" height="230" alt="" />
+          <div class="portfolio-layer">
+            <h4>Portfolio</h4>
+            <p>
+              This is my portfolio Developed by me using React, Javascript, HTML and CSS.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+      
+
+      
+    
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#" name="submit-to-google-sheet" >
+        <div class="input-box">
+          <input type="text" name="Name" placeholder="Full Name" required />
+          <input type="email" name="Email" placeholder="Email Address" required />
+        </div>
+        <div class="input-box">
+          <input type="number" name="Number" placeholder="Moible Number" />
+          <input type="text" name="Subject" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name="Message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Tushar Grg | All Right Reserved |</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script defer src="/js/script.js"></script>
+    <script defer src="/js/particles.js"></script>
+    <script defer src="/js/app.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwCVsEQGr8cvT7yN3G16tXNIuYomFK-9hEgkUQFma1W3qafnpaz4b2y9ZOsrtLxk-j-AA/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  
   </body>
 </html>
