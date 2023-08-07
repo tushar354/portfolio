@@ -30,6 +30,7 @@
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
+        <img src="images/moon.png" id="icon">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -88,15 +89,14 @@
       <div class="services-container">
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
-          <h3>web Development</h3>
+          <h3>Web Development</h3>
           <p>
             I am a student web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL.
              I am available to work on simple websites to complex web applications.
              I am committed to providing excellent customer service.
              I am passionate about web development and I am confident 
              in my ability to deliver high-quality results. I am a clear and concise
-              communicator, and I am always professional in my interactions with clients. I am also available to provide support 
-              throughout the development process.
+              communicator, and I am always professional in my interactions with clients. I am also available to provide support throughout the process.
           </p>
           <a href="https://github.com/tushar354" target="_blank" class="btn">Read More</a>
         </div>
@@ -115,7 +115,7 @@
 
         <div class="services-box">
           <i class="bx bx-paint"></i>
-          <h3>ghraphic design</h3>
+          <h3>Graphic Design</h3>
           <p>
             I am a graphic designer with experience in a variety of design styles. I can create logos, branding, web design, and print design. 
             I am passionate about graphic design and I am always looking for new ways to express my creativity. I am confident that I can create beautiful
@@ -155,6 +155,19 @@
           </div>
         </div>
 
+        <!-- <div class="portfolio-box">
+          <img src="images/photo1.jpg" height="230" alt="" />
+          <div class="portfolio-layer">
+            <h4>soulboundConfessions</h4>
+            <p>
+              dedicated to providing compassionate and effective mental health 
+              care to individuals who are struggling with mental health issues.
+            </p>
+            <a href="https://soulboundconfessions.netlify.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div> -->
+
+
         <div class="portfolio-box">
           <img src="images/photo3.jpg" height="230" alt="" />
           <div class="portfolio-layer">
@@ -180,14 +193,14 @@
           <input type="email" name="Email" placeholder="Email Address" required />
         </div>
         <div class="input-box">
-          <input type="number" name="Number" placeholder="Moible Number" />
+          <input type="number" name="Number" placeholder="Mobile Number" />
           <input type="text" name="Subject" placeholder="Email Subject" />
         </div>
         <textarea
           name="Message"
           id=""
-          cols="30"
-          rows="10"
+          cols="40"
+          rows="15"
           placeholder="Your Message"
         ></textarea>
         <input type="submit" value="Send Message" class="btn" />
@@ -196,11 +209,11 @@
 
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 by Tushar Grg | All Right Reserved |</p>
+        <p>Copyright &copy; 2023 by Tushar Garg | All Right Reserved |</p>
       </div>
-      <div class="footer-iconTop">
+      <!-- <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
+      </div> -->
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -208,17 +221,7 @@
     <script defer src="/js/script.js"></script>
     <script defer src="/js/particles.js"></script>
     <script defer src="/js/app.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwCVsEQGr8cvT7yN3G16tXNIuYomFK-9hEgkUQFma1W3qafnpaz4b2y9ZOsrtLxk-j-AA/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+    <script src="js/script.js"></script>
   
   </body>
 </html>

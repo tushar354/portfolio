@@ -18,6 +18,7 @@
   --second-bg-color: rgb(21, 24, 32);
   --text-color: #fff;
   --main-color: rgb(34, 168, 198);
+  --about-color: rgb(31, 36, 47);
 }
 
 html {
@@ -91,7 +92,7 @@ section {
   -webkit-filter: drop-shadow(0 20px 10px rgb(13, 161, 202))
     drop-shadow(0 0 10px #000);
   filter: drop-shadow(0 20px 10px rgb(5, 139, 176)) drop-shadow(0 0 10px black);
-  height: 458px;
+  /* height: 458px; */
   justify-content: center;
   margin-left: 12px;
   opacity: 9;
@@ -172,7 +173,8 @@ span {
   align-items: center;
   gap: 2rem;
   /* background: var(--second-bg-color); */
-  background: rgb(31, 36, 47);
+  /* background: rgb(31, 36, 47); */
+  background: var(--about-color);
 }
 
 .about-img img {
@@ -187,7 +189,7 @@ span {
   -webkit-filter: drop-shadow(0 20px 10px rgb(13, 161, 202))
     drop-shadow(0 0 10px #000);
   filter: drop-shadow(0 20px 10px rgb(5, 139, 176)) drop-shadow(0 0 10px black);
-  height: 458px;
+  /* height: 458px; */
   justify-content: center;
   margin-left: 12px;
   opacity: 9;
@@ -251,7 +253,8 @@ span {
 
 .protfolio {
   /* background: var(--second-bg-color); */
-  background: rgb(9, 30, 43);
+  /* background: rgb(9, 30, 43); */
+  background: var(--about-color);
 }
 .protfolio h2 {
   margin-bottom: 4rem;
@@ -267,7 +270,7 @@ span {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
+  box-shadow: 0 0 1rem var(--about-color);
   overflow: hidden;
   display: flex;
 }
@@ -286,7 +289,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--about-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,12 +359,12 @@ span {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
   /* background: var(--second-bg-color); */
-  background: rgb(5, 20, 29);
+  background: var(--about-color);
 }
 .footer-text p {
   font-size: 1.6rem;
@@ -444,15 +447,16 @@ span {
   .home-content h1 {
     font-size: 5rem;
   }
-  .home-img {
-    width: 70vw;
+  .home-img img {
+    width: 103vw;
     margin-top: 4rem;
   }
   .about {
     flex-direction: column-reverse;
+    /* width: 107%; */
   }
   .about img {
-    width: 70vw;
+    width: 103vw;
     margin-top: 4rem;
   }
 
@@ -464,6 +468,9 @@ span {
   }
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    flex-direction: column-reverse;
   }
 }
 
@@ -483,11 +490,11 @@ span {
   }
 }
 @media (max-width: 365px) {
-  .home-img {
-    width: 90vw;
+  .home-img img {
+    width: 103vw;
   }
-  .about-img {
-    width: 90vw;
+  .about-img img {
+    width: 103vw;
   }
   .footer {
     flex-direction: column-reverse;
@@ -508,4 +515,19 @@ span {
 }
 .active {
   color: bisque;
+}
+#icon {
+  width: 40px;
+  cursor: pointer;
+  padding-left: 6px;
+  padding-top: 0px;
+  margin: -20px;
+}
+
+.dark-theme {
+  --bg-color: rgba(49, 124, 177, 0.824);
+  --second-bg-color: rgba(11, 45, 60, 0.607);
+  --text-color: #0e0303;
+  --main-color: rgb(5, 252, 227);
+  --about-color: rgba(70, 118, 152, 0.852);
 }

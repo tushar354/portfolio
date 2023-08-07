@@ -54,3 +54,24 @@ const typed = new Typed(".multiple-text", {
   backDelay: 1000,
   loop: true,
 });
+
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    icon.src = "images/sun.png";
+  } else {
+    icon.src = "images/moon.png";
+  }
+};
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbwCVsEQGr8cvT7yN3G16tXNIuYomFK-9hEgkUQFma1W3qafnpaz4b2y9ZOsrtLxk-j-AA/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+  form.reset();
+});
