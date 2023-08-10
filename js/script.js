@@ -6,23 +6,22 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("header nav a");
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector("header nav a[herf*=" + id + "]")
-          .classList.add("active");
-      });
-    }
+  sections.forEach(sec => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
+
+      if(top >= offset && top < offset + height){
+          navLinks.forEach(links =>{
+              links.classList.remove('active');
+              document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
+          });
+      };
   });
 
   let header = document.querySelector("header");
@@ -74,4 +73,22 @@ form.addEventListener("submit", (e) => {
     .then((response) => console.log("Success!", response))
     .catch((error) => console.error("Error!", error.message));
   form.reset();
+});
+
+const cursorDot=document.querySelector("[data-cursor-dot]");
+const cursorOutline= document.querySelector("[data-cursor-outline]");
+
+window.addEventListener("mousemove", function(e){
+
+  const posX=e.clientX;
+  const posY=e.clientY;
+
+  cursorDot.style.left=`${posX}px`;
+  cursorDot.style.top=`${posY}px`;
+
+  cursorOutline.animate({
+    left:`${posX}px`,
+    top:`${posY}px`
+  },{duration:500,fill:"forwards"});
+
 });

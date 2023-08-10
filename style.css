@@ -30,6 +30,31 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   height: 100%;
+  cursor: none;
+}
+
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: rgb(9, 173, 243);
+}
+
+.cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsl(194, 99%, 48%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cursor-dot,
+.cursor-outline{
+  position: fixed;
+  top:0;
+  left: 0;
+  transform: translate(-50%,-50%);
+
 }
 
 section {
@@ -531,3 +556,4 @@ span {
   --main-color: rgb(5, 252, 227);
   --about-color: rgba(70, 118, 152, 0.852);
 }
+
